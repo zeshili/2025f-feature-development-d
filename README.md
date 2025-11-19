@@ -47,7 +47,7 @@ Weather-Desktop-App/
 
 1. **Clone or unzip** the project:
    ```bash
-   git clone <your-repo-url>
+   git clone <repo url>
    cd Weather-Desktop-App
    ```
 
@@ -168,3 +168,47 @@ Feel free to modify and distribute with attribution.
 - Weather data from [OpenWeatherMap](https://openweathermap.org/)
 - Icons and images provided in `/Icons` and `/Images` directories
 - Developed in Python with ❤️
+
+
+## How to Run the Application
+
+### 1. Install Dependencies
+ **Python 3** needs to be installed.  
+Then install the required packages:
+
+```bash
+pip install pytz
+pip install threading
+pip install requests
+pip install datetime
+pip install timezonefinder
+```
+
+
+
+### 2. Create an OpenWeather Account
+Go to: https://openweathermap.org/  
+Create an account.
+
+### 3. Confirm Your Email
+OpenWeather will send a verification link to your email.  
+After confirming, you will receive an **API key** via email, as well as on the dashboard.
+
+### 4. Obtain Your API Key
+Go to the **API Keys** section on your OpenWeather dashboard and copy your key.
+
+### 5. Configure the Application
+Open the `config.ini` file in the project directory and paste your API key:
+
+```ini
+api = YOUR_API_KEY_HERE
+```
+
+### 6. Run the Application
+Start the app using:
+
+```bash
+python3 app.py
+```
+
+After the app launches, type any city into the search bar and press **Enter**.
